@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div#primeira{
+            background-color: lightblue;
+            width: 300px;
+            height: 20px;
+        }
+
+        div#primeira:hover{
+            color: red;
+        }
+
+        div#primeira > p {
+            display: none;
+            background-color: red;
+            color: white;
+        }
+
+        div#primeira:hover > p {
+            display: block;
+        }
+
+        div{
+            background-color: lightcoral;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+        }
+
+        div:hover{
+            background-color: yellow;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uzando pseudo-classes</h1>
+    <h2>Fazendo elemento escondido</h2>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div id="primeira">
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do exemplo</p>
+    <h2>Fazendo quadrados "interativos"</h2>
+    
+    <div><p>01</p></div>
+    <div><p>02</p></div>
+    <div><p>03</p></div>
+</body>
+</html>

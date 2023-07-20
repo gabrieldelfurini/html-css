@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        a:active{
+            color: rgb(0, 255, 255);
+        }
+        a:visited{
+            color: rgb(145, 145, 145);
+        }
+        a:hover{
+            background-color: rgb(0, 0, 0);
+        }
+        a.especial::after{
+            content: ' <-- link';
+        }
+        a.especial::before{
+            content: "-->";
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Pseudo-Elementos</h1>
+    <h2>Lista de canais do youtube</h2>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=zB3gtxYHmeY&t=1094s" target="_blank" rel="external" class="especial">Canal de linguas</a></li>
+        <li><a href="https://www.youtube.com/watch?v=zB3gtxYHmeY&t=1094s" target="_blank" rel="external">Canal de sotaques</a></li>
+        <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjsiuTSmo-AAxUJT0gAHUNhDWoYABAEGgJjZQ&ohost=www.google.com&cid=CAESa-D2DkOhTYqJ8AarsTskq9UVIhux8D3gWhOjkOV2qkUTMUu4JsO5GGHp-puPGXXUspq5KERfcQKN1shSxHPlxCH5z3_Jnb0jrxlNDjvPLHJgQH1KQjFEVE5S7bVHZioMBlvwavFsvu7dyi49&sig=AOD64_2JpWlKqA4eYFX17O8TLY1mRfdczw&q&adurl&ved=2ahUKEwjIiN_Smo-AAxUCLLkGHYJgDlcQ0Qx6BAgKEAM" target="_blank" rel="external">Canal de entretenimento</a></li>
+        <li><a href="">Canal de religião</a></li>
+    </ul>
+</body>
+</html>

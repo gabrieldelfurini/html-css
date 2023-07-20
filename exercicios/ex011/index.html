@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias com HTML5</title>
+</head>
+<body>
+    <!--Usando as imagens que o GUanabara fez no video-->
+    <!-- <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositividos diferentes ou simplesmente aumente ou diminua o tamanho de seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens Flexivel">
+    </picture> -->
+
+    <!--Cortando a imagem coforme o tamanho da tela-->
+    <!-- <h1>Agora usando imagens minhas</h1>
+    <p>redimensionar a tela do mesmo jeito que as de cima</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-500.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-700.png" type="image/png">
+        <img src="imagens/imagem-full.png" alt="Image flexivel">
+    </picture> -->
+
+    
+    <h1>Diminuindo a altura e largura das imagens</h1>
+    <p>Esses dois parametros vao diminuir, e não so a largura, como no exercicio acima</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo o Audio</h1>
+    <p>Agora vou aprender a como reproduzir os audios</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav">
+        <p>O seu navegador nao consegue rodar esses audios</p>
+        <p><a href="midia/guanacast-33.mp3">Baixe aqui seu arquivo</a></p>
+    </audio>
+</body>
+</html>

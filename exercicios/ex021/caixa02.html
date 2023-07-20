@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 21 de site </title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: white;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 17px solid transparent;
+            border-image-source: url('borda-personalizada.png');
+            border-image-slice: 28;
+            border-image-repeat: repeat;
+        }
+
+        header > h1{
+            box-shadow: 0px 0px 10px 2px black;
+        }
+
+        nav{
+            background-image: linear-gradient(to right, gray, transparent);
+            box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.527);
+        }
+
+        nav > a{
+            margin-right: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: rgba(255, 255, 255, 0.39);
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 0px 5px;
+            box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.39);
+        }
+
+        article{
+            background-color: rgb(204, 204, 204);
+            padding: 10px 5px;
+        }
+
+        aside{
+           background-color: gray;
+        }
+
+        footer{
+            background-color: black;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        footer > p{
+            color: white;
+            text-align: center;
+            margin: 0px;
+        }
+
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section class="noticias">
+            <article>
+                <h1>Noticias sobre o Brasil</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim at quam sit ut possimus voluptas ab dolores dicta labore, voluptatum nesciunt voluptatem necessitatibus molestias blanditiis? Ratione dignissimos assumenda dolor quo.</p>
+                <aside>Escrito por Gabriel Furini</aside>
+            </article>
+        </section>
+        <section class="lancamentos">
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gabriel de Lima Furini</p>
+    </footer>
+</body>
+</html>
