@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframes</title>
+    <style>
+        iframe{
+            width: 50vw;
+            height: 50vh;
+            border: 5px dashed black;
+        }
+        iframe#linkis{
+            border: 3px solid black;
+        }
+        iframe#videos{
+            border: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acessando sites dentro de 'iframes'</h1>
+    <p>Acessar o site do curso em video 
+
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500px" width="100px">
+            <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+        </iframe>
+        
+        dentro de um iframe</p>
+
+
+        <p>Agora colocando <strong>conteudo interno</strong>, 
+            
+        <iframe src="../ex023/tabela2.html" frameborder="0"
+        >
+            <p>Infelizmente seu navegador não é compatível com o iframe</p>
+        </iframe>
+        um exercicio que eu ja fiz dentro de iframes Se liga como ficou.</p>
+
+        <h1>Agora colocando conteudo nos iframes através de links</h1>
+
+        <ul>
+            <li><a href="../ex023/tabela1.html" target="frame">Primeira tabela</a></li>
+            <li><a href="../ex023/tabela2.html" target="frame">Segunda tabela</a></li>
+            <li><a href="../ex023/tabela3.html" target="frame">Terceira tabela</a></li>
+        </ul>
+
+        <iframe src="" frameborder="0" name="frame" id="linkis"></iframe>
+
+        <h1>Tornando os iframes seguros</h1>
+        
+        <form action="cadastro.php" method="get">
+            <p>
+                Nome
+                <input type="text" name="nome" id="nome">
+                <input type="submit" value="Cadastrar">
+            </p>
+        </form>
+
+        <h1>Usando iframes de outros sites</h1>
+        <ul>
+            <li><a href="pag001.html" target="video">Primeiro exemplo</a></li>
+            <li><a href="pag002.html" target="video">Segundo exemplo</a></li>
+            <li><a href="pag003.html" target="video">Terceiro exemplo</a></li>
+        </ul>
+        <iframe src="" frameborder="0" name="video" id="videos"></iframe>
+</body>
+</html>
