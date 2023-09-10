@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio da aula</title>
+</head>
+<body>
+    <h1>Primeiro formulário do curso</h1>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p> <label for="inome">Nome:</label> <input type="text" name="nome" id="inome" autocomplete="username"></p>
+            <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+            <p>
+                <label for="iidade">Idade:</label>
+                <input type="number" name="idade" id="iidade" value="18" min="18" max="65">
+            </p>
+            <div>
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" required minlength="5" maxlength="10" autocomplete="new-password">
+            </div>
+            <p>
+                <label for="inascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="inascimento" value="2005-07-22">
+            </p>
+            <p>
+                <label for="ihoras">Quantas horas trabalhou em casa:</label>
+                <input type="time" name="horas" id="ihoras">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="sexo" id="imasculino">
+                <label for="imasculino">Masculino</label>
+                <input type="radio" name="sexo" id="ifeminino">
+                <label for="ifeminino">Feminino</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
