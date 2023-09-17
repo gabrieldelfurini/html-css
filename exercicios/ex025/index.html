@@ -54,6 +54,38 @@
             <input type="file" name="file" id="ifile">
         </fieldset>
 
+
+        <fieldset>
+            <legend>Elementos de formularios diferentes de inputs</legend>
+
+            <p>
+                <label for="iest">Selecione seu estado: </label>
+                <select name="estados" id="iest">
+                    <optgroup  label="Regiao">
+                        <option value="SP">Sao Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+
+                    <optgroup label="outra">
+                        <option value="FA">VIOLA</option>
+                        <option value="PL">palotina</option>
+                        <option value="TL">toledo</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="iprof">Digite sua profissão: </label>
+                <input type="text" name="prof" id="iprof" list="listprof">
+                <datalist id="listprof">
+                    <option>Cozinheiro</option>
+                    <option>Delegado</option>
+                    <option>zelador</option>
+                </datalist>
+            </p>
+        </fieldset>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
